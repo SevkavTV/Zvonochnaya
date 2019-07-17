@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/Info"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Info"/>
+        <item
+            android:id="@+id/Edit"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Edit"/>
+        <item
+            android:id="@+id/Call"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Call"/>
+        <item
+            android:id="@+id/SendSMS"
+            android:title="Send a SMS"/>
+        <item
+            android:id="@+id/SendEmail"
+            android:title="Send an Email"/>
+        <item
+            android:id="@+id/SendCryptoEmail"
+            android:title="Send a CryptoSMS"/>
+        <item
+            android:id="@+id/SendTelegram"
+            android:title="Send to Telegram"/>
+    </group>
+</menu>

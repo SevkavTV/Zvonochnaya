@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="text">0</string>
-    <string name="buttonPlus">PLUS</string>
-    <string name="buttonMinus">MINUS</string>
-    <string name="buttonForward">FORWARD</string>
-    <string name="buttonTwice">TWICE</string>
-    <string name="buttonBack">BACK</string>
-</resources>

@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             requestPermissions(new String[]{Manifest.permission.SEND_SMS},
                     READ_SMS_PERMISSIONS_REQUEST);
         }
-        String number1 = "0974706108";
+        String number1 = "0933935780";
         String toSms1 = "smsto:" + number1;
         String messageText1 = "Привет";
         SmsManager smsManager1 = SmsManager.getDefault();

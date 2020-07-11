@@ -82,31 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
         sms();
     }
-    public void sms(){
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
-                != PackageManager.PERMISSION_GRANTED) {
-            if ((Boolean) shouldShowRequestPermissionRationale(
-                    Manifest.permission.SEND_SMS)) {
-                Toast.makeText(this, "Please allow permission!", Toast.LENGTH_SHORT).show();
-            }
-            requestPermissions(new String[]{Manifest.permission.SEND_SMS},
-                    READ_SMS_PERMISSIONS_REQUEST);
-        }
-        String number1 = "0933935780";
-        String toSms1 = "smsto:" + number1;
-        String messageText1 = "Привет";
-        SmsManager smsManager1 = SmsManager.getDefault();
-        smsManager1.sendTextMessage(toSms1, null, messageText1, null, null);
-        for(int i = 0; i < contacts.size(); i++) {
-            String number = contacts.get(i).getPhone();
-            if(number != "0504201035" && contacts.get(i).getName() != "Мама" && contacts.get(i).getName() != "Папа" && contacts.get(i).getName() != "Бабушка" && contacts.get(i).getName() != "Дедушка") {
-                String toSms = "smsto:" + number;
-                String messageText = "Привет";
-                SmsManager smsManager = SmsManager.getDefault();
-                smsManager.sendTextMessage(toSms, null, messageText, null, null);
-            }
-        }
-    }
     void checkList() {
         for(int i = 0; i < contacts.size(); i++){
             String temp = contacts.get(i).getName();
